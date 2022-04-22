@@ -8,9 +8,10 @@
 ## Get the certificate information from minikube and add it to terraform.tfvars
 
 `kubectl config view --minify --flatten --context=minikube`
- user.client-key-data is client_key
- user.client-certificate-data is client_certificate
- user.certificate-authority-data is cluster_ca_certificate
+
+  user.client-key-data is client_key
+  user.client-certificate-data is client_certificate
+  user.certificate-authority-data is cluster_ca_certificate
 
 
 ## unseal the vault
