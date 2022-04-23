@@ -18,6 +18,13 @@
     user.client-certificate-data is client_certificate
     user.certificate-authority-data is cluster_ca_certificate
 
+
+## run terraform to install required apps
+
+    terraform init
+    terraform plan
+    terraform apply
+
 ## unseal the vault
 
     $ kubectl exec vault-0 -n vault -- vault operator init -key-shares=1 -key-threshold=1 -format=json > cluster-keys.json
